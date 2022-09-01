@@ -11,6 +11,7 @@
 
     <modules>
         <module>rich-common</module>
+        <module>rich-business-sys</module>
     </modules>
 
     <properties>
@@ -20,8 +21,22 @@
 
         <rich.version>1.0.0-RELEASE</rich.version>
         <spring.boot.version>2.7.3</spring.boot.version>
+        <spring.cloud.version>2020.0.3</spring.cloud.version>
 
+        <knife4j.version>2.0.9</knife4j.version>
+        <mybatis-plus.version>3.5.1</mybatis-plus.version>
+        <druid.version>1.2.6</druid.version>
+
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -31,6 +46,63 @@
                 <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.rich</groupId>
+                <artifactId>rich-common-core</artifactId>
+                <version>${rich.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rich</groupId>
+                <artifactId>rich-common-db</artifactId>
+                <version>${rich.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rich</groupId>
+                <artifactId>rich-common-knife4j</artifactId>
+                <version>${rich.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.rich</groupId>
+                <artifactId>rich-business-sys-api</artifactId>
+                <version>${rich.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rich</groupId>
+                <artifactId>rich-business-sys-starter</artifactId>
+                <version>${rich.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
