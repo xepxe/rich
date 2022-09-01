@@ -1,0 +1,74 @@
+version: "2"
+networks:
+  xth:
+    driver: bridge
+
+services:
+  nacos:
+    image: nacos/nacos-server:${NACOS_VERSION}
+    container_name: nacos
+    env_file:
+      - /opt/docker/common/env/nacos.env
+    volumes:
+      - /opt/docker/common/nacos/logs/:/home/nacos/logs
+      - /opt/docker/common/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9555:9555"
+    depends_on:
+      - mysql
+    restart: always
+    networks:
+      - xth
+
+  mysql:
+    container_name: mysql
+    hostname: mysql
+    image: mysql:8.0.28
+    privileged: true
+    env_file:
+      - /opt/docker/common/env/mysql.env
+    volumes:
+      - /opt/docker/common/mysql/data/mysql-files:/var/lib/mysql-files
+      - /opt/docker/common/mysql/data/mysql:/var/lib/mysql
+      - /opt/docker/common/mysql/conf/my.cnf:/etc/mysql/my.cnf:rw
+      - /opt/docker/common/mysql/init:/docker-entrypoint-initdb.d/
+      - /opt/docker/common/mysql/logs:/var/log/mysql
+
+    ports:
+      - "3306:3306"
+    networks:
+      - xth
+    restart: always
+
+  redis:
+    container_name: redis
+    image: redis:7.0-rc1-bullseye
+    ports:
+      - "6379:6379"
+    command: redis-server /etc/conf/redis.conf
+    volumes:
+      - /opt/docker/common/redis/data:/data:rw
+      - /opt/docker/common/redis/conf/:/etc/conf/
+      - /opt/docker/common/redis/log/:/opt/redis/log/:rw
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
+    networks:
+      - xth
+
+  sentinel-dashboard:
+    container_name: sentinel-dashboard
+    image: bladex/sentinel-dashboard:1.8.0
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      JAVA_OPTS: "-Dserver.port=8858 -Dcsp.sentinel.dashboard.server=localhost:8858 -Dproject.name=sentinel-dashboard -Dnacos.namespace=5103c1fb-977b-4a5e-a44a-961859d1d5e6 "
+    ports: #避免出现端口映射错误，建议采用字符串格式 8080端口为Dockerfile中EXPOSE端口
+      - "8858:8858"
+    volumes:
+      - /opt/docker/common/sentinel-dashboard/logs:/root/logs
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - xth

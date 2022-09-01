@@ -10,7 +10,7 @@ import lombok.Getter;
 @Getter
 public class BizException extends RuntimeException {
     private static final long serialVersionUID = 4571263678168285907L;
-    private final IError error;
+    private final IResult result;
 
     public BizException(IError error) {
         super(error.msg());

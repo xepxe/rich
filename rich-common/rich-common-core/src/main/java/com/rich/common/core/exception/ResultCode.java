@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
  * @desc
  */
 @AllArgsConstructor
-public enum ErrorEnum implements IError {
+public enum ResultCode implements IResult {
     SUCCESS("200", "请求成功"),
     FAIL("500", "请求失败");;
     private final String code;

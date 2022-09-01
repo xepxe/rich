@@ -5,7 +5,7 @@ package com.rich.common.core.exception;
  * @date 2022/9/1 14:34
  * @desc
  */
-public interface IError {
+public interface IResult {
     String code();
     String msg();
 }
