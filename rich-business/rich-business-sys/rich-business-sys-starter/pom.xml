@@ -12,20 +12,7 @@
     <artifactId>rich-business-sys-starter</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.rich</groupId>
-            <artifactId>rich-common-core</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>com.rich</groupId>
-            <artifactId>rich-common-db</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.rich</groupId>
-            <artifactId>rich-common-knife4j</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>com.rich</groupId>
