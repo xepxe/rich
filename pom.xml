@@ -12,6 +12,7 @@
     <modules>
         <module>rich-common</module>
         <module>rich-business-sys</module>
+        <module>rich-gateway</module>
     </modules>
 
     <properties>
