@@ -1,8 +1,12 @@
 package com.rich.common.core.model;
 
-import com.rich.common.core.exception.ErrorEnum;
-import com.rich.common.core.exception.IError;
-import lombok.*;
+import com.rich.common.core.exception.IResult;
+import com.rich.common.core.exception.ResultCode;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Map;
@@ -26,14 +30,14 @@ public class R<T> implements Serializable {
     private Map<String, Object> addition;
 
     public static <T> R<T> ok() {
-        return ok(ErrorEnum.SUCCESS, null);
+        return ok(ResultCode.SUCCESS, null);
     }
 
     public static <T> R<T> ok(T data) {
-        return R.ok(ErrorEnum.SUCCESS, data);
+        return R.ok(ResultCode.SUCCESS, data);
     }
 
-    public static <T> R<T> ok(IError e, T data) {
+    public static <T> R<T> ok(IResult e, T data) {
         R<T> r = new R<>();
         r.setCode(e.code());
         r.setMsg(e.msg());
@@ -42,18 +46,18 @@ public class R<T> implements Serializable {
     }
 
     public static <T> R<T> fail() {
-        return fail(ErrorEnum.FAIL, null);
+        return fail(ResultCode.FAIL, null);
     }
 
     public static <T> R<T> fail(T data) {
-        return R.fail(ErrorEnum.FAIL, data);
+        return R.fail(ResultCode.FAIL, data);
     }
 
-    public static <T> R<T> fail(IError e) {
+    public static <T> R<T> fail(IResult e) {
         return R.fail(e, null);
     }
 
-    public static <T> R<T> fail(IError e, T data) {
+    public static <T> R<T> fail(IResult e, T data) {
         R<T> r = new R<>();
         r.setCode(e.code());
         r.setMsg(e.msg());

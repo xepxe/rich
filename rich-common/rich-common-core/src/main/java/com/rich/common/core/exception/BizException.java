@@ -12,9 +12,9 @@ public class BizException extends RuntimeException {
     private static final long serialVersionUID = 4571263678168285907L;
     private final IResult result;
 
-    public BizException(IError error) {
-        super(error.msg());
-        this.error = error;
+    public BizException(IResult result) {
+        super(result.msg());
+        this.result = result;
     }
 
 }
