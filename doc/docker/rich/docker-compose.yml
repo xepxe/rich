@@ -10,10 +10,9 @@ services:
     image: nacos/nacos-server:${NACOS_VERSION}
     container_name: nacos
     env_file:
-      - ../env/nacos-standlone-mysql.env
+      - ${USER_DIR}/nacos/.env
     volumes:
-      - ${USER_DIR}/standalone-logs/:/home/nacos/logs
-      - ${USER_DIR}/init.d/custom.properties:/home/nacos/init.d/custom.properties
+      - ${USER_DIR}/nacos/log:/home/nacos/logs
     ports:
       - "8848:8848"
       - "9848:9848"
@@ -21,13 +20,20 @@ services:
     depends_on:
       - mysql
     restart: always
+    networks:
+      - rich
+
+
   mysql:
+    image: nacos/nacos-mysql:${MYSQL_VERSION}
     container_name: mysql
-    image: nacos/nacos-mysql:8.0.16
     env_file:
-      - ../env/mysql.env
+      - ${USER_DIR}/mysql/.env
     volumes:
-      - ./mysql:/var/lib/mysql
+      - ${USER_DIR}/mysql/data:/var/lib/mysql
+      - ${USER_DIR}/mysql/nacos-mysql.sql:/docker-entrypoint-initdb.d/nacos-mysql.sql
     ports:
       - "3306:3306"
+    networks:
+      - rich
 
