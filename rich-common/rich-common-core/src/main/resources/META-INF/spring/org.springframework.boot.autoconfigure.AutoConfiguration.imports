@@ -1,1 +1,2 @@
 com.rich.common.core.aspect.SysLogAspect
+com.rich.common.core.handler.GlobalExceptionHandler

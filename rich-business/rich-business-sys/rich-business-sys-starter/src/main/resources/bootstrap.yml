@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rich-business-sys
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.126.141:8848
+        namespace: e955ad8d-2a87-484d-aba9-c1ff0e8811fe
+        group: xepxe
+        file-extension: yml
+        shared-configs:
+          - group: xepxe
+            data-id: rich-business-base.yml
+            refresh: true

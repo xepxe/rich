@@ -1,7 +1,6 @@
 package com.rich.business.sys.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.rich.business.sys.entity.DemoEntity;
 
 /**
  * @author xepxe
