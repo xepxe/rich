@@ -30,10 +30,35 @@ services:
     env_file:
       - ${USER_DIR}/mysql/.env
     volumes:
-      - ${USER_DIR}/mysql/data:/var/lib/mysql
+      - ${USER_DIR}/mysql/data/mysql-files:/var/lib/mysql-files
+      - ${USER_DIR}/mysql/data/mysql:/var/lib/mysql
+      - ${USER_DIR}/mysql/conf/my.cnf:/etc/mysql/my.cnf:rw
       - ${USER_DIR}/mysql/nacos-mysql.sql:/docker-entrypoint-initdb.d/nacos-mysql.sql
     ports:
       - "3306:3306"
+    networks:
+      - rich
+
+  redis:
+    image: redis:${REDIS_VERSION}
+    container_name: redis
+    ports:
+      - "6379:6379"
+    privileged: true
+    command:
+      - /bin/bash
+      - -c
+      - |
+        echo 551 > /proc/sys/net/core/somaxconn
+        echo 1 > /proc/sys/vm/overcommit_memory
+        redis-server /etc/conf/redis.conf
+    volumes:
+      - ${USER_DIR}/redis/data:/data:rw
+      - ${USER_DIR}/redis/conf/:/etc/conf/
+      - ${USER_DIR}/redis/log/:/opt/redis/log/:rw
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
     networks:
       - rich
 
