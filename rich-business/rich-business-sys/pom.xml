@@ -6,6 +6,7 @@
         <artifactId>rich-business</artifactId>
         <groupId>com.rich</groupId>
         <version>1.0.0-RELEASE</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -32,6 +33,23 @@
             <groupId>com.rich</groupId>
             <artifactId>rich-common-knife4j</artifactId>
         </dependency>
+<<<<<<< Updated upstream:rich-business/rich-business-sys/pom.xml
+=======
+
+        <dependency>
+            <groupId>com.rich</groupId>
+            <artifactId>rich-business-sys-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+>>>>>>> Stashed changes:rich-business-sys/rich-business-sys-starter/pom.xml
     </dependencies>
 
 </project>

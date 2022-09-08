@@ -1,6 +1,5 @@
 package com.rich.common.knife4j.config;
 
-import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import com.rich.common.knife4j.model.Knife4jProperty;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
@@ -8,7 +7,6 @@ import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -22,11 +20,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
  * @date 2022/9/1 13:35
  * @desc
  */
-@EnableKnife4j
-@EnableSwagger2WebMvc
 @AutoConfiguration
+@EnableSwagger2WebMvc
 @EnableConfigurationProperties(Knife4jProperty.class)
-@ConditionalOnProperty(prefix = "knife4j", value = "enable", matchIfMissing = true)
+@ConditionalOnProperty(prefix = "knife4j", name = "enable", havingValue = "true")
 @AllArgsConstructor
 public class Knife4jConfig {
     private final Knife4jProperty knife4jProperty;
@@ -43,7 +40,7 @@ public class Knife4jConfig {
                         .build())
                 .groupName(knife4jProperty.getGroupName())
                 .select()
-                .apis(RequestHandlerSelectors.withClassAnnotation(ApiOperation.class))
+                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
                 .paths(PathSelectors.any())
                 .build();
     }

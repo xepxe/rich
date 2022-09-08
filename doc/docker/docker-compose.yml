@@ -1,0 +1,33 @@
+version: "3.9"
+
+networks:
+  rich:
+    name: rich
+    driver: bridge
+
+services:
+  nacos:
+    image: nacos/nacos-server:${NACOS_VERSION}
+    container_name: nacos
+    env_file:
+      - ../env/nacos-standlone-mysql.env
+    volumes:
+      - ${USER_DIR}/standalone-logs/:/home/nacos/logs
+      - ${USER_DIR}/init.d/custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9555:9555"
+    depends_on:
+      - mysql
+    restart: always
+  mysql:
+    container_name: mysql
+    image: nacos/nacos-mysql:8.0.16
+    env_file:
+      - ../env/mysql.env
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+

@@ -6,5 +6,5 @@ package com.rich.common.core.constant;
  * @desc
  */
 public interface Constant {
-    String API = "/api/v1/";
+
 }

@@ -1,5 +1,6 @@
 package com.rich.common.core.aspect;
 
+import com.alibaba.fastjson.JSON;
 import com.rich.common.core.annotation.SysLog;
 import com.rich.common.core.model.SysLogDTO;
 import com.rich.common.core.util.IpUtil;
@@ -57,8 +58,8 @@ public class SysLogAspect {
             stopWatch.stop();
             sysLogDTO.setResult(JsonUtil.to(o));
             sysLogDTO.setCost(stopWatch.getTime());
+            log.info("request:{}", JsonUtil.to(sysLogDTO));
         }
-
         return o;
     }
 
@@ -77,7 +78,6 @@ public class SysLogAspect {
         sysLogDTO.setMethod(request.getMethod());
         sysLogDTO.setParams(reqParams);
         sysLogDTO.setCreateTime(new Date());
-        log.info("request:{}", JsonUtil.to(sysLogDTO));
         return sysLogDTO;
     }
 

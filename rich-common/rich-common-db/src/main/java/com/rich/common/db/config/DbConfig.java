@@ -20,9 +20,11 @@ public class DbConfig {
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();
         mybatisPlusInterceptor.addInnerInterceptor(paginationInnerInterceptor());
+        mybatisPlusInterceptor.addInnerInterceptor(optimisticLockerInnerInterceptor());
         return mybatisPlusInterceptor;
     }
 
+    //分页
     @Bean
     public PaginationInnerInterceptor paginationInnerInterceptor() {
         PaginationInnerInterceptor paginationInnerInterceptor = new PaginationInnerInterceptor();
@@ -32,6 +34,7 @@ public class DbConfig {
         return paginationInnerInterceptor;
     }
 
+    //乐观锁
     @Bean
     public OptimisticLockerInnerInterceptor optimisticLockerInnerInterceptor() {
         return new OptimisticLockerInnerInterceptor();

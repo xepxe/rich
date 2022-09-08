@@ -23,8 +23,8 @@
 
         <rich.version>1.0.0-RELEASE</rich.version>
         <spring.boot.version>2.7.3</spring.boot.version>
-        <spring.cloud.version>2020.0.3</spring.cloud.version>
-
+        <spring.cloud.version>2021.0.1</spring.cloud.version>
+        <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
         <knife4j.version>2.0.9</knife4j.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <druid.version>1.2.6</druid.version>
@@ -53,6 +53,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
