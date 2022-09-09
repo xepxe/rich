@@ -19,10 +19,10 @@ services:
       - "9555:9555"
     depends_on:
       - mysql
+      - redis
     restart: always
     networks:
       - rich
-
 
   mysql:
     image: nacos/nacos-mysql:${MYSQL_VERSION}
