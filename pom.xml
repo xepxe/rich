@@ -28,7 +28,7 @@
         <knife4j.version>2.0.9</knife4j.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <druid.version>1.2.6</druid.version>
-
+        <redisson.version>3.17.6</redisson.version>
         <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
@@ -76,6 +76,11 @@
             </dependency>
             <dependency>
                 <groupId>com.rich</groupId>
+                <artifactId>rich-common-redis</artifactId>
+                <version>${rich.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rich</groupId>
                 <artifactId>rich-common-knife4j</artifactId>
                 <version>${rich.version}</version>
             </dependency>
@@ -95,6 +100,11 @@
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
 
             <dependency>

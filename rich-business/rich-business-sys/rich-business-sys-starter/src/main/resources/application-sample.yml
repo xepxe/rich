@@ -73,7 +73,14 @@ spring:
         server-addr: 192.168.126.141:8848
         namespace: public
         group: rich
-
+  redis:
+    host: 192.168.126.141
+    port: 6379
+    password: 123456
+    connect-timeout: 5000
+    timeout: 5000
+    redisson:
+      file: classpath:redisson.yml
 
 mybatis-plus:
   configuration:

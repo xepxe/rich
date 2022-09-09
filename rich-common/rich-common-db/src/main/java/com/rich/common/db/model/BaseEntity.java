@@ -26,7 +26,7 @@ import java.util.Date;
 public class BaseEntity<B extends Model<B>> extends Model<B> implements Serializable {
     private static final long serialVersionUID = 9050642043692021774L;
     @TableId(type = IdType.ASSIGN_ID)
-    String id;
+    Long id;
     String createBy;
     @TableField(fill = FieldFill.INSERT)
     Date createTime;
