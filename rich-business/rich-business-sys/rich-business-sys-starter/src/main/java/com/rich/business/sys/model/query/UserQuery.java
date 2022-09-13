@@ -14,6 +14,7 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode(callSuper = true)
 public class UserQuery extends PageQuery {
+    private static final long serialVersionUID = 3562536498101821889L;
     String username;
     String nickname;
 }

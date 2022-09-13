@@ -25,6 +25,12 @@
         <dependency>
             <groupId>com.rich</groupId>
             <artifactId>rich-common-knife4j</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>guava</artifactId>
+                    <groupId>com.google.guava</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.rich</groupId>
@@ -53,6 +59,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
     </dependencies>
 
 </project>

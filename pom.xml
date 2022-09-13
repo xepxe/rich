@@ -25,7 +25,7 @@
         <spring.boot.version>2.7.3</spring.boot.version>
         <spring.cloud.version>2021.0.1</spring.cloud.version>
         <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
-        <knife4j.version>2.0.9</knife4j.version>
+        <knife4j.version>3.0.3</knife4j.version>
         <mybatis-plus.version>3.5.1</mybatis-plus.version>
         <druid.version>1.2.6</druid.version>
         <redisson.version>3.17.6</redisson.version>
