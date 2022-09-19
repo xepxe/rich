@@ -14,8 +14,3 @@ spring:
           - group: rich
             data-id: rich-business-base.yml
             refresh: true
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-knife4j:
-  enable: true

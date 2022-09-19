@@ -13,8 +13,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @MapperScan({"com.rich.business.sys.mapper"})
 @SpringBootApplication
 @EnableDiscoveryClient
-public class SysController {
+public class SysApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SysController.class, args);
+        SpringApplication.run(SysApplication.class, args);
     }
 }

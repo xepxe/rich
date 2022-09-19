@@ -1,15 +1,20 @@
 package com.rich.business.sys.controller;
 
 import com.rich.business.sys.api.constant.SysConstant;
-import com.rich.business.sys.model.query.UserQuery;
+import com.rich.business.sys.model.req.UserReq;
+import com.rich.business.sys.model.req.UserSaveReq;
+import com.rich.business.sys.model.req.UserUpdateReq;
 import com.rich.business.sys.model.vo.UserVO;
 import com.rich.business.sys.service.UserService;
 import com.rich.common.core.model.R;
-import com.rich.common.db.model.PageResult;
+import com.rich.common.db.model.PageVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author xepxe
@@ -26,27 +31,26 @@ public class UserController {
 
     @ApiOperation(value = "分页查询用户")
     @GetMapping
-    public R<PageResult<UserVO>> queryUserPage(UserQuery query) {
-        return R.ok(userService.queryUserPage(query));
+    public R<PageVO<UserVO>> queryUserPage(UserReq req) {
+        return R.ok(userService.queryUserPage(req));
     }
 
     @ApiOperation(value = "保存用户")
     @PostMapping
-    public R<PageResult<Void>> saveUser() {
-        return R.ok();
+    public R<Boolean> saveUser(@RequestBody UserSaveReq req) {
+        return R.ok(userService.saveUser(req));
     }
 
     @ApiOperation(value = "更新用户")
     @PutMapping
-    public R<PageResult<Void>> updateUser() {
-        return R.ok();
+    public R<Boolean> updateUser(@RequestBody UserUpdateReq req) {
+        return R.ok(userService.updateUser(req));
     }
 
     @ApiOperation(value = "删除用户")
     @DeleteMapping
-    public R<PageResult<Void>> delUser() {
-        return R.ok();
+    public R<Boolean> delUser(@RequestParam(value = "ids") List<Integer> ids) {
+        return R.ok(userService.delUser(ids));
     }
-
 
 }

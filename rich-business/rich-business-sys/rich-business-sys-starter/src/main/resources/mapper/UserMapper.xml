@@ -3,5 +3,10 @@
 <mapper namespace="com.rich.business.sys.mapper.UserMapper">
     <select id="queryUserPage" resultType="com.rich.business.sys.model.vo.UserVO">
         select u.* from sys_user u
+        <where>
+            <if test="q.username != null and q.username !=''">and u.username like concat('%',#{q.username},'%')</if>
+            <if test="q.nickname != null and q.nickname !=''">and u.nickname like concat('%',#{q.nickname},'%')</if>
+        </where>
+        order by u.create_time desc
     </select>
 </mapper>

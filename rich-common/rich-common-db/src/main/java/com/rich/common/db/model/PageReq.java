@@ -14,7 +14,7 @@ import java.io.Serializable;
 @Data
 @ToString
 @EqualsAndHashCode
-public class PageQuery implements Serializable {
+public class PageReq implements Serializable {
     private static final long serialVersionUID = 6432917736302096688L;
     private Long pageNum = 1L;
     private Long pageSize = 10L;

@@ -15,13 +15,13 @@ import java.util.List;
 @Data
 @ToString
 @EqualsAndHashCode(callSuper = true)
-public class PageResult<T> extends PageQuery {
+public class PageVO<T> extends PageReq {
     private static final long serialVersionUID = -6085846093637078044L;
     private Long total;
     private List<T> records;
 
-    public static <T> PageResult<T> to(Page<T> page) {
-        PageResult<T> pageResult = new PageResult<>();
+    public static <T> PageVO<T> to(Page<T> page) {
+        PageVO<T> pageResult = new PageVO<>();
         pageResult.setPageNum(page.getCurrent());
         pageResult.setPageSize(page.getSize());
         pageResult.setTotal(page.getTotal());

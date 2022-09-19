@@ -4,11 +4,16 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.rich.business.sys.entity.UserEntity;
 import com.rich.business.sys.mapper.UserMapper;
-import com.rich.business.sys.model.query.UserQuery;
+import com.rich.business.sys.model.req.UserReq;
+import com.rich.business.sys.model.req.UserSaveReq;
+import com.rich.business.sys.model.req.UserUpdateReq;
 import com.rich.business.sys.model.vo.UserVO;
 import com.rich.business.sys.service.UserService;
-import com.rich.common.db.model.PageResult;
+import com.rich.common.db.model.PageVO;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author xepxe
@@ -19,9 +24,29 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
 
     @Override
-    public PageResult<UserVO> queryUserPage(UserQuery query) {
-        Page<UserVO> userPage = new Page<>(query.getPageNum(), query.getPageSize());
-        userPage = getBaseMapper().queryUserPage(userPage, query);
-        return PageResult.to(userPage);
+    public PageVO<UserVO> queryUserPage(UserReq req) {
+        Page<UserVO> userPage = new Page<>(req.getPageNum(), req.getPageSize());
+        userPage = getBaseMapper().queryUserPage(userPage, req);
+        return PageVO.to(userPage);
+    }
+
+    @Override
+    public Boolean saveUser(UserSaveReq req) {
+        UserEntity userEntity = new UserEntity();
+        BeanUtils.copyProperties(req, userEntity);
+        userEntity.setStatus(Boolean.FALSE);
+        return save(userEntity);
+    }
+
+    @Override
+    public Boolean updateUser(UserUpdateReq req) {
+        UserEntity userEntity = new UserEntity();
+        BeanUtils.copyProperties(req, userEntity);
+        return updateById(userEntity);
+    }
+
+    @Override
+    public Boolean delUser(List<Integer> ids) {
+        return removeBatchByIds(ids);
     }
 }

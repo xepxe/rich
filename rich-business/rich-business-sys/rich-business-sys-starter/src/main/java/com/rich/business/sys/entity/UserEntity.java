@@ -2,6 +2,7 @@ package com.rich.business.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.rich.common.db.model.BaseEntity;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AccessLevel;
 import lombok.Data;
@@ -37,6 +38,6 @@ public class UserEntity extends BaseEntity<UserEntity> {
     @ApiModelProperty("头像")
     String avatar;
     @ApiModelProperty("状态 0停用 1启用")
-    Integer status;
+    Boolean status;
 
 }

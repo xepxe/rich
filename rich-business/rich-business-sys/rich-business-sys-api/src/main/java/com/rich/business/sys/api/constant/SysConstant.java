@@ -7,4 +7,5 @@ package com.rich.business.sys.api.constant;
  */
 public interface SysConstant {
     String API = "/api/v1/sys";
+
 }

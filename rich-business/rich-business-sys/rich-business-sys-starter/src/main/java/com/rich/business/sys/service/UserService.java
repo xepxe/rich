@@ -2,9 +2,13 @@ package com.rich.business.sys.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.rich.business.sys.entity.UserEntity;
-import com.rich.business.sys.model.query.UserQuery;
+import com.rich.business.sys.model.req.UserReq;
+import com.rich.business.sys.model.req.UserSaveReq;
+import com.rich.business.sys.model.req.UserUpdateReq;
 import com.rich.business.sys.model.vo.UserVO;
-import com.rich.common.db.model.PageResult;
+import com.rich.common.db.model.PageVO;
+
+import java.util.List;
 
 /**
  * @author xepxe
@@ -12,5 +16,11 @@ import com.rich.common.db.model.PageResult;
  * @desc
  */
 public interface UserService extends IService<UserEntity> {
-    PageResult<UserVO> queryUserPage(UserQuery query);
+    PageVO<UserVO> queryUserPage(UserReq req);
+
+    Boolean saveUser(UserSaveReq req);
+
+    Boolean updateUser(UserUpdateReq req);
+
+    Boolean delUser(List<Integer> ids);
 }

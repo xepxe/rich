@@ -12,8 +12,8 @@ import java.util.Date;
  * @desc
  */
 public class CustomMetaObjectHandler implements MetaObjectHandler {
-    private final static String CREATE_TIME = "create_time";
-    private final static String UPDATE_TIME = "update_time";
+    private final static String CREATE_TIME = "createTime";
+    private final static String UPDATE_TIME = "updateTime";
     private final static String DELETED = "deleted";
     private final static String VERSION = "version";
 

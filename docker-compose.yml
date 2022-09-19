@@ -1,0 +1,26 @@
+version: "3.9"
+
+networks:
+  rich:
+    external: true
+    name: rich
+
+services:
+  rich-gateway:
+    image: rich-gateway:1.0.0-RELEASE
+    container_name: rich-gateway
+    hostname: rich-gateway
+    networks:
+      - rich
+    restart: always
+    expose:
+      - "12000"
+
+  rich-business-sys:
+    image:   rich-business-sys-starter:1.0.0-RELEASE
+    container_name:   rich-business-sys
+    networks:
+      - rich
+    restart: always
+    expose:
+      - "12001"

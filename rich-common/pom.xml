@@ -17,14 +17,7 @@
         <module>rich-common-db</module>
         <module>rich-common-knife4j</module>
         <module>rich-common-redis</module>
+        <module>rich-common-es</module>
     </modules>
-
-    <properties>
-
-    </properties>
-
-    <dependencies>
-
-    </dependencies>
 
 </project>

@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: rich-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.126.142:8848
+        namespace: public
+        group: rich
+        file-extension: yml
+        shared-configs:
+          - group: rich
+            data-id: rich-business-base.yml
+            refresh: true
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns: "*"
+            exposedHeaders:
+              - content-type
+            allowedHeaders:
+              - content-type
+            allowCredentials: true
+            allowedMethods:
+              - GET
+              - OPTIONS
+              - PUT
+              - DELETE
+              - POST

@@ -1,6 +1,6 @@
-package com.rich.business.sys.model.query;
+package com.rich.business.sys.model.req;
 
-import com.rich.common.db.model.PageQuery;
+import com.rich.common.db.model.PageReq;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -13,8 +13,12 @@ import lombok.ToString;
 @Data
 @ToString
 @EqualsAndHashCode(callSuper = true)
-public class UserQuery extends PageQuery {
+public class UserReq extends PageReq {
     private static final long serialVersionUID = 3562536498101821889L;
     String username;
     String nickname;
+    String email;
+    String phone;
+    Integer sex;
+
 }
