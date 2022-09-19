@@ -1,0 +1,231 @@
+2022-09-09T03:00:31.129699Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.16) initializing of server in progress as process 29
+2022-09-09T03:00:31.131709Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-09T03:00:32.163489Z 0 [Warning] [MY-010161] [Server] You need to use --log-bin to make --binlog-expire-logs-seconds work.
+2022-09-09T03:00:32.348961Z 5 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2022-09-09T03:00:33.105863Z 0 [System] [MY-013170] [Server] /usr/sbin/mysqld (mysqld 8.0.16) initializing of server has completed
+2022-09-09T03:00:35.021144Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-09T03:00:35.021183Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 80
+2022-09-09T03:00:35.023191Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-09T03:00:35.547239Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-09T03:00:35.572227Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2022-09-09T03:00:35.647791Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock'
+2022-09-09T03:00:40.290679Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-09T03:00:40.632709Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-09T03:00:40.632748Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-09T03:00:40.634223Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-09T03:00:40.860721Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-09T03:00:40.872622Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-09T03:00:41.089718Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-09T03:10:22.695593Z 10 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Name or service not known
+mbind: Operation not permitted
+mbind: Operation not permitted
+2022-09-09T09:06:09.172748Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 128  user: 'nacos'.
+2022-09-09T09:06:09.172969Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 129  user: 'nacos'.
+2022-09-09T09:06:09.173349Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 131  user: 'root'.
+2022-09-09T09:06:09.174901Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 132  user: 'root'.
+2022-09-09T09:06:10.913984Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-09T09:06:13.872267Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-09T09:06:13.872319Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-09T09:06:13.877321Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-09T09:06:14.955394Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-09T09:06:15.028230Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-09T09:06:15.037680Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-09T09:06:30.645183Z 10 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Name or service not known
+2022-09-09T09:24:45.777496Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-09T09:24:45.777548Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-09T09:24:45.779746Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-09T09:24:46.257440Z 0 [System] [MY-010229] [Server] Starting crash recovery...
+2022-09-09T09:24:46.261980Z 0 [System] [MY-010232] [Server] Crash recovery finished.
+2022-09-09T09:24:46.358514Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-09T09:24:46.398767Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-09T09:24:46.495664Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-09T09:25:11.456564Z 10 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:25:21.507956Z 11 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:25:31.519047Z 12 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:25:41.530409Z 13 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:25:51.547206Z 14 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:28:43.261398Z 15 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:28:53.302702Z 16 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:29:03.312925Z 17 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:29:13.325837Z 18 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:29:23.336324Z 19 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:30:15.783774Z 20 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:30:25.827554Z 21 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:30:35.838403Z 22 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:30:45.852676Z 23 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:30:55.868841Z 24 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:31:51.316084Z 25 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:32:01.356807Z 26 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:32:11.368765Z 27 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:32:21.392734Z 28 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:32:31.404231Z 29 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:33:05.504071Z 30 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:33:15.554689Z 31 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:33:28.622233Z 32 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:33:38.664757Z 33 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:33:48.676692Z 34 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:33:58.692752Z 35 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:34:08.701329Z 36 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:35:10.806964Z 37 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:35:20.848694Z 38 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:35:30.862194Z 39 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:35:40.872809Z 40 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:35:50.888882Z 41 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:36:05.900859Z 42 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+mbind: Operation not permitted
+2022-09-09T09:36:06.027969Z 43 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+mbind: Operation not permitted
+2022-09-09T09:36:15.971752Z 44 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+mbind: Operation not permitted
+2022-09-09T09:38:00.459264Z 45 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:38:10.502285Z 46 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:38:20.517004Z 47 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:38:30.530868Z 48 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:38:40.545657Z 49 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:39:26.545795Z 50 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:39:36.596373Z 51 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:39:46.610771Z 52 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:39:56.616922Z 53 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:40:06.632455Z 54 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:42:18.570008Z 55 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:42:28.612151Z 56 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Temporary failure in name resolution
+2022-09-09T09:42:29.478505Z 57 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Name or service not known
+2022-09-13T02:31:31.460133Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 80  user: 'nacos'.
+2022-09-13T02:31:31.461253Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 72  user: 'root'.
+2022-09-13T02:31:31.462593Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 73  user: 'root'.
+2022-09-13T02:31:31.464059Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 74  user: 'root'.
+2022-09-13T02:31:31.464546Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 42  user: 'root'.
+2022-09-13T02:31:31.465681Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 43  user: 'root'.
+2022-09-13T02:31:31.467512Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 44  user: 'root'.
+2022-09-13T02:31:31.468146Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 70  user: 'root'.
+2022-09-13T02:31:31.469210Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 79  user: 'nacos'.
+2022-09-13T02:31:31.470131Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 71  user: 'root'.
+2022-09-13T02:31:33.337572Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-13T02:31:34.993950Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-13T02:31:34.994027Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-13T02:31:34.997138Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-13T02:31:35.574225Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-13T02:31:35.608657Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-13T02:31:35.751997Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-13T02:40:02.032493Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-13T02:40:08.311590Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-13T02:40:08.311644Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-13T02:40:08.314056Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-13T02:40:08.735838Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-13T02:40:08.766834Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-13T02:40:08.870531Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-13T02:44:10.249481Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 8  user: 'nacos'.
+2022-09-13T02:44:10.250368Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'nacos'.
+2022-09-13T02:44:11.681734Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-13T02:44:31.335819Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-13T02:44:31.335882Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-13T02:44:31.339219Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-13T02:44:32.042165Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-13T02:44:32.096839Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-13T02:44:30.685676Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-13T02:45:29.720615Z 10 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Name or service not known
+mbind: Operation not permitted
+2022-09-14T09:18:30.044474Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 397  user: 'root'.
+2022-09-14T09:18:31.666814Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-14T09:18:53.165031Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-14T09:18:53.165096Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-14T09:18:53.170383Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-14T09:18:54.672509Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-14T09:18:54.786421Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-14T09:18:54.803542Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-14T09:25:29.430163Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-14T09:27:29.973017Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-14T09:27:29.973062Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-14T09:27:29.975257Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-14T09:27:30.437398Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-14T09:27:30.481515Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-14T09:27:30.575201Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-15T06:56:41.484136Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-15T06:56:47.604386Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-15T06:56:47.604460Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-15T06:56:47.612937Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-15T06:56:49.302928Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-15T06:56:49.410135Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-15T06:56:49.554639Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-15T08:30:35.903081Z 17 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Name or service not known
+2022-09-16T06:29:33.485017Z 178 [Warning] [MY-010055] [Server] IP address '192.168.126.142' could not be resolved: Name or service not known
+2022-09-16T09:22:45.490963Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-16T09:22:45.491013Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-16T09:22:45.493730Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-16T09:22:46.891394Z 0 [System] [MY-010229] [Server] Starting crash recovery...
+2022-09-16T09:22:46.992111Z 0 [System] [MY-010232] [Server] Crash recovery finished.
+2022-09-16T09:22:47.074585Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-16T09:22:47.142002Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-16T09:22:47.342218Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-16T09:25:10.545957Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 8  user: 'nacos'.
+2022-09-16T09:25:10.547125Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'nacos'.
+2022-09-16T09:25:11.569342Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-16T09:27:38.411007Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-16T09:27:38.411068Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-16T09:27:38.414585Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-16T09:27:39.277422Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-16T09:27:39.337588Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-16T09:27:39.363139Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-16T09:29:09.507250Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 8  user: 'nacos'.
+2022-09-16T09:29:09.507581Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'nacos'.
+2022-09-16T09:29:10.851329Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-16T09:42:03.514081Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-16T09:42:03.514124Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-16T09:42:03.516230Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-16T09:42:04.280076Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-16T09:42:04.326142Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-16T09:42:04.435590Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-16T09:44:05.346146Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-16T09:44:07.346802Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-16T09:44:07.346862Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-16T09:44:07.349292Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-16T09:44:08.050663Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-16T09:44:08.094380Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-16T09:44:08.161264Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-16T09:44:48.218222Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 8  user: 'nacos'.
+2022-09-16T09:44:48.218450Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'nacos'.
+2022-09-16T09:44:49.642360Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-16T09:45:42.093109Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-16T09:45:42.093168Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-16T09:45:42.096240Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-16T09:45:42.816945Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-16T09:45:42.857930Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-16T09:45:42.872399Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-16T09:45:52.888115Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 8  user: 'nacos'.
+2022-09-16T09:45:52.888939Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 9  user: 'nacos'.
+2022-09-16T09:45:54.424282Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.16)  MySQL Community Server - GPL.
+2022-09-16T09:46:12.941268Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-16T09:46:12.941334Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-16T09:46:12.944879Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-16T09:46:13.699385Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-16T09:46:13.739336Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-16T09:46:13.994277Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+mbind: Operation not permitted
+2022-09-16T10:04:18.830882Z 11 [Warning] [MY-010055] [Server] IP address '172.18.0.1' could not be resolved: Name or service not known
+2022-09-19T02:01:32.471773Z 43 [Warning] [MY-010055] [Server] IP address '192.168.126.1' could not be resolved: Name or service not known
+mbind: Operation not permitted
+mbind: Operation not permitted
+2022-09-19T10:17:11.380723Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2022-09-19T10:17:11.380792Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.16) starting as process 1
+2022-09-19T10:17:11.406075Z 0 [Warning] [MY-010122] [Server] One can only use the --user switch if running as root
+2022-09-19T10:17:13.276140Z 0 [System] [MY-010229] [Server] Starting crash recovery...
+2022-09-19T10:17:13.446841Z 0 [System] [MY-010232] [Server] Crash recovery finished.
+2022-09-19T10:17:13.597293Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2022-09-19T10:17:13.690560Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.16'  socket: '/var/lib/mysql/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2022-09-19T10:17:13.705022Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2022-09-19T10:17:34.485543Z 8 [Warning] [MY-010055] [Server] IP address '172.18.0.1' could not be resolved: Name or service not known
+mbind: Operation not permitted
