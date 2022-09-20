@@ -6,12 +6,13 @@ import com.rich.business.sys.model.req.UserSaveReq;
 import com.rich.business.sys.model.req.UserUpdateReq;
 import com.rich.business.sys.model.vo.UserVO;
 import com.rich.business.sys.service.UserService;
+import com.rich.common.core.annotation.SysLog;
+import com.rich.common.core.constant.OperationEnum;
 import com.rich.common.core.model.R;
 import com.rich.common.db.model.PageVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,6 +31,7 @@ public class UserController {
     private final UserService userService;
 
     @ApiOperation(value = "分页查询用户")
+    @SysLog(value = "分页查询用户", operation = OperationEnum.QUERY)
     @GetMapping
     public R<PageVO<UserVO>> queryUserPage(UserReq req) {
         return R.ok(userService.queryUserPage(req));

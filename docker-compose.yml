@@ -17,8 +17,8 @@ services:
       - "12000"
 
   rich-business-sys:
-    image:   rich-business-sys-starter:1.0.0-RELEASE
-    container_name:   rich-business-sys
+    image: rich-business-sys-starter:1.0.0-RELEASE
+    container_name: rich-business-sys
     networks:
       - rich
     restart: always

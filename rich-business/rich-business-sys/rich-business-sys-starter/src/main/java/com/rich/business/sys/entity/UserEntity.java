@@ -2,7 +2,6 @@ package com.rich.business.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.rich.common.db.model.BaseEntity;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AccessLevel;
 import lombok.Data;
