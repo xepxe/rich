@@ -23,6 +23,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
 
+
     @Override
     public PageVO<UserVO> queryUserPage(UserReq req) {
         Page<UserVO> userPage = new Page<>(req.getPageNum(), req.getPageSize());

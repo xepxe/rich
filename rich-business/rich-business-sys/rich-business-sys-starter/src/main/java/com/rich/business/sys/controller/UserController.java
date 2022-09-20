@@ -1,6 +1,7 @@
 package com.rich.business.sys.controller;
 
 import com.rich.business.sys.api.constant.SysConstant;
+import com.rich.business.sys.constant.SysCacheEnum;
 import com.rich.business.sys.model.req.UserReq;
 import com.rich.business.sys.model.req.UserSaveReq;
 import com.rich.business.sys.model.req.UserUpdateReq;
@@ -13,6 +14,8 @@ import com.rich.common.db.model.PageVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -33,6 +36,8 @@ public class UserController {
     @ApiOperation(value = "分页查询用户")
     @SysLog(value = "分页查询用户", operation = OperationEnum.QUERY)
     @GetMapping
+    @Cacheable(value = SysCacheEnum.USERS)
+
     public R<PageVO<UserVO>> queryUserPage(UserReq req) {
         return R.ok(userService.queryUserPage(req));
     }
